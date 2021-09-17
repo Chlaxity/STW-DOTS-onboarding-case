@@ -39,6 +39,7 @@ public class AttackSystem : SystemBase
                 
             }
         }).Schedule();
+        CompleteDependency();
         //Spawn effect
         //Find targets
         //Apply effect to targets

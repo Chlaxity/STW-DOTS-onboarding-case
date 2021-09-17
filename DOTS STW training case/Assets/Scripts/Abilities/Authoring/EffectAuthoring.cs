@@ -11,5 +11,6 @@ public class EffectAuthoring : MonoBehaviour, IConvertGameObjectToEntity
     {
         dstManager.AddComponentData(entity, new TimerData { time = timer, value = timer });
         dstManager.AddComponent<DestroyOnTimerTag>(entity);
+        dstManager.AddBuffer<TargetBuffer>(entity);
     }
 }

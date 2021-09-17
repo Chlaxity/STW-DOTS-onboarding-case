@@ -23,5 +23,6 @@ public class CameraFollowSystem : SystemBase
         //We want to continously get the translation from the player entity and update the CameraMovement's target to be the player's position.
         var translations = GetComponentDataFromEntity<Translation>(true);
         CameraMovement.instance.SetTarget(translations[player].Value);
+        CompleteDependency();
     }
 }
