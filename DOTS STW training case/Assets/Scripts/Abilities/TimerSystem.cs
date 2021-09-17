@@ -16,15 +16,5 @@ public class TimerSystem : SystemBase
                 timer.value -= dt;
 
         }).Schedule();
-
-        Entities.ForEach((DynamicBuffer<AbilityContainerData> timer) =>
-        {
-            if (timer[0].cooldown.value > 0)
-            {
-                var t = timer[0];
-                t.cooldown.value -= dt;
-                timer[0] = t;
-            }
-        }).Schedule();
     }
 }

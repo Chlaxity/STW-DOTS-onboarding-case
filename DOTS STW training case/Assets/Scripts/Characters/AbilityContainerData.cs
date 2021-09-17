@@ -1,8 +1,7 @@
 using Unity.Entities;
 
-public struct AbilityContainerData : IBufferElementData
+[GenerateAuthoringComponent]
+public struct AbilityContainerData : IComponentData
 {
     public Entity attack;
-    public TimerData cooldown;
-
 }

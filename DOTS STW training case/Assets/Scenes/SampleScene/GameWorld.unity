@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 1968609621}
   - component: {fileID: 1968609620}
   - component: {fileID: 1968609619}
-  - component: {fileID: 1968609624}
   - component: {fileID: 1968609623}
+  - component: {fileID: 1968609624}
   - component: {fileID: 1968609618}
   m_Layer: 0
   m_Name: Player
@@ -392,9 +392,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1968609617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92ffca8fb4480e842ab7643ea083388b, type: 3}
+  m_Script: {fileID: 11500000, guid: 89aee7efe87a7e74da62155e8c4b741d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilities:
-  - abilityPrefab: {fileID: 1460731681175889739, guid: 327ae4c070034c14f8beb87a394b1f24, type: 3}
-    cooldown: 0.5
+  attack: {fileID: 1460731681175889739, guid: 327ae4c070034c14f8beb87a394b1f24, type: 3}
